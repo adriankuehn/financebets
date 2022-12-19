@@ -1,0 +1,208 @@
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context="aaa.financebets.alpha_v1.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/final_2">
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_navigation"
+            app:itemBackground="@color/gray_500"
+            app:itemTextColor="@drawable/selector"
+            app:itemIconTint="@drawable/selector"
+            app:menu="@menu/menu_navigation"
+            android:layout_alignParentBottom="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="6dp"
+                app:elevation="16dp">
+
+                <TextView
+                    android:id="@+id/tv_willkommen"
+                    android:layout_width="match_parent"
+                    android:layout_height="149dp"
+                    android:background="@drawable/bitcoin2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="No Connection"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp"
+                    android:paddingLeft="400px"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+            <Space
+                android:id="@+id/space_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+            <com.jjoe64.graphview.GraphView
+                android:id="@+id/graph_home"
+                android:layout_width="match_parent"
+                android:layout_height="149dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/round_normal" />
+
+            <Space
+                android:id="@+id/space_2"
+                android:layout_width="match_parent"
+                android:layout_height="22dp" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_2"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_dein_platz"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="@drawable/round_normal"
+                    android:text=" Dein Platz:       "
+                    android:layout_marginBottom="3dp"
+                    android:layout_marginTop="3dp"
+                    android:textSize="17sp" />
+
+                <Space
+                    android:layout_width="238dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="96dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/round_normal"
+                    app:srcCompat="@android:drawable/stat_notify_sync_noanim"
+                    app:tint="#55AFFF" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:text="Wettverlauf"
+                    android:textColor="#555555"
+                    android:textSize="19sp"
+                    app:backgroundTint="#F1F1F1" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="6dp"
+                    android:text="Bestenliste"
+                    android:textColor="#555555"
+                    android:textSize="19sp"
+                    app:backgroundTint="#F1F1F1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/LinearLayout_3_1"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/divider4_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="#55AFFF" />
+
+                <View
+                    android:id="@+id/divider4_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="4dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF" />
+            </LinearLayout>
+
+
+            <ViewFlipper
+                android:id="@+id/myViewFlipper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/firstLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </ScrollView>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/secondLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                    </LinearLayout>
+                </ScrollView>
+
+            </ViewFlipper>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="260dp"
+        android:layout_height="match_parent"
+        android:id="@+id/nav_view"
+        app:itemTextAppearance="?android:attr/textAppearanceMedium"
+        app:itemIconSize="26dp"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_drawer_menu"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

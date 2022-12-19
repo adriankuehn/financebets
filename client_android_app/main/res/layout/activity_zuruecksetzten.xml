@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aaa.financebets.alpha_v1.Zuruecksetzten">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="216dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="Zurücksetzten:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="326dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center_horizontal"
+        android:text="ACHTUNG! Indem Sie auf bestätigen drücken wird ihr gesamter Wettverlauf gelöscht und Ihr Kontostand auf 10000 Coins zurückgesetzt. Alle anderen Daten bleiben erhalten."
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_zurück"
+        android:layout_width="135dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="288dp"
+        android:text="Bestätigen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_zurücks"
+        android:layout_width="346dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="368dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

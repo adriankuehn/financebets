@@ -1,0 +1,129 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin:0;
+}
+  
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1.0fr;
+    grid-template-rows: 0.7fr 0.3fr 0.8fr 0.1fr;
+    grid-template-areas:
+      "logo logo logo"
+      "preise preise preise"
+      "bitcoin info playstore"
+      "footer footer footer";
+    grid-gap: 0.2rem;
+    font-weight: 800;
+    text-align: center;
+}
+  
+#id_logo {
+    grid-area: logo;
+}
+  
+#id_preise {
+    grid-area: preise;
+}
+  
+#id_img_bitcoin {
+    grid-area: bitcoin;
+}
+  
+#id_info {
+    grid-area: info;
+}
+
+#id_playstore {
+    grid-area: playstore;
+}
+  
+#id_footer {
+    grid-area: footer;
+    height: 50px;
+    padding:10px;
+    font-size: medium;
+    background-color: #d4d4d4;
+    text-align: center;
+}
+
+@media only screen and (max-width: 888px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.0fr 0.5fr 0.5fr 0.5fr 0.5fr, 0.2fr;
+        grid-template-areas:
+        "logo"
+        "preise"
+        "bitcoin"
+        "info"
+        "playstore"
+        "footer";
+        font: size 30px;;
+    }
+    .c_bitcoin{
+        padding:30px;
+        width:50%;
+        margin-left:10px;
+    }
+    .c_playstore{
+        margin:10px;
+        padding:30px;
+        width:70%;
+    }
+    #id_infotext {
+        border: 1.5px solid black;
+        padding:10px;
+        margin:10px;
+        font-size: 30vh;
+        background-color: #cae1ff;
+        margin-left:0px;
+        margin-right:20px;
+    }
+}
+  
+
+.u_preis {
+    font-size:x-large;
+    font-weight:bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+.c_bitcoin{
+    margin-left:10px;
+}
+
+
+#id_infotext {
+    border: 1.5px solid black;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
+    font-size:medium;
+    background-color: #cae1ff;
+    margin-left:20px;
+}
+
+#c_logoo {
+    width:100%;
+    min-height:300px;
+    object-fit:cover;
+}
+
+a {
+    color: #000000;
+}
+
+#zaehler{
+    background-color: #d4d4d4;
+}
+
+
+
+
+
+

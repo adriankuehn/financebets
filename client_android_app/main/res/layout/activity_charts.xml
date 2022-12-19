@@ -1,0 +1,347 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_navigation"
+        app:itemBackground="@color/gray_500"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/final_2">
+        <!--android:background="@drawable/final_2"-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="aaa.financebets.alpha_v1.MainActivity">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:elevation="17dp"
+                        android:background="#F3F3F3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/grau" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton1_1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_sell" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton1_2"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_buy3" />
+                    </LinearLayout>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:elevation="17dp"
+                        android:background="@drawable/round_normal_blue" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:elevation="17dp"
+                        android:background="#F3F3F3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/grau" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton2_1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/pic_sell" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton2_2"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_buy3" />
+                    </LinearLayout>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="17dp"
+                        android:background="@drawable/round_normal_blue" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:elevation="17dp"
+                        android:background="#F3F3F3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/grau" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton3_1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/pic_sell" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton3_2"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_buy3" />
+                    </LinearLayout>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph3"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="17dp"
+                        android:background="@drawable/round_normal_blue"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:elevation="17dp"
+                        android:background="#F3F3F3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/grau" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton4_1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/pic_sell" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton4_2"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_buy3" />
+                    </LinearLayout>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph4"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="17dp"
+                        android:background="@drawable/round_normal_blue"/>
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:elevation="17dp"
+                        android:background="#F3F3F3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/grau" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton5_1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/pic_sell" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton5_2"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_buy3" />
+                    </LinearLayout>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph5"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="17dp"
+                        android:background="@drawable/round_normal_blue" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:elevation="17dp"
+                        android:background="#F3F3F3"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="170dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:scaleType="center"
+                            app:srcCompat="@drawable/grau" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6_1"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/pic_sell" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton6_2"
+                            android:layout_marginRight="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="#F3F3F3"
+                            android:scaleType="centerInside"
+                            app:srcCompat="@drawable/pic_buy3" />
+                    </LinearLayout>
+
+                    <com.jjoe64.graphview.GraphView
+                        android:id="@+id/graph6"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginBottom="70dp"
+                        android:layout_marginRight="10dp"
+                        android:elevation="17dp"
+                        android:background="@drawable/round_normal_blue" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

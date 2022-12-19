@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="aaa.financebets.alpha_v1.Info">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="39dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="64dp"
+        android:gravity="center_horizontal"
+        android:text="Info/Bedingungen:"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="116dp"
+        android:gravity="center_horizontal"
+        android:text="FinanceBets spiegelt einen simulierten Broker wieder, indem Währungen sowie Kryptowährungen virtuell gehandelt werden können. Die in der APP angezeigten Währungspreise sind nicht real und werden zentral (Serverseitig) und zufallsbasiert erzeugt. Die Kurspreise haben keinen Zusammenhang mir den realen Preisen. Sie werden lediglich mehrmals am Tag den realen Kurspreisen angepasst. In der APP wird nicht mit echtem Geld gehandelt, sondern nur mit virtuellen Coins. Die Kursinformationen der APP sollten unter keinen Umständen vom APP-Nutzer für reale Handelsentscheidungen verwendet werden. Es wird keine Haftung übernommen. Unter keinen Umständen besteht vom Nutzer ein Anspruch gegenüber dem Appanbieter. Indem sie fortfahren und die APP verwenden, akzeptieren Sie die oben genannten Informationen und Bedingungen. "
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="28dp"
+        android:text="Last Time Active Serverscripts:"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_last_active1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginBottom="28dp"
+        android:text="..."
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_last_active2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginBottom="8dp"
+        android:text="..."
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

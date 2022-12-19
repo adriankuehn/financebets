@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alpha_v1">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logoo"
+        android:label="FinanceBets"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Alpha_V1"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="aaa.financebets.alpha_v1.ResetPW"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.LoginV"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.RegisterV"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.Zuruecksetzten"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.Impressum"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.Lizenzen"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.Datenschutz"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.Info"
+            android:exported="true" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.Ausloggen"
+            android:exported="true" />
+        <activity android:name="aaa.financebets.alpha_v1.Meine_Wetten" />
+        <activity
+            android:name="aaa.financebets.alpha_v1.trading_activity"
+            android:theme="@style/Theme.AppCompat.Dialog" />
+        <activity android:name="aaa.financebets.alpha_v1.Charts_Activity" />
+        <activity android:name="aaa.financebets.alpha_v1.Launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

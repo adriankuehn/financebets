@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/miItem1"
+        android:title=" Home"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/miItem2"
+        android:title=" Ausloggen"
+        android:icon="@drawable/ic_exit"/>
+
+    <item
+        android:id="@+id/miItem3"
+        android:title=" Info/Bedingungen"
+        android:icon="@drawable/ic_info_blue"/>
+
+    <item
+        android:id="@+id/miItem4"
+        android:title=" Datenschutz"
+        android:icon="@drawable/ic_protection"/>
+
+    <item
+        android:id="@+id/miItem5"
+        android:title=" Lizenzen"
+        android:icon="@drawable/ic_license"/>
+
+    <item
+        android:id="@+id/miItem6"
+        android:title=" Impressum"
+        android:icon="@drawable/ic_impressum"/>
+
+    <item
+        android:id="@+id/miItem7"
+        android:title=" Zurücksetzten"
+        android:icon="@drawable/ic_reset"/>
+
+</menu>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>FinanceBets - Financial Betting</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv='content-language' content='de-DE'>
+        <meta name="description" content="FinanceBets offers a virtual Broker for Financial Betting. It contains demo-trading and interactive price charts which are adjusted to the forex market."/>
+    </head>
+
+    <div class="container" >
+
+        <div id="id_logo">
+                <img id="c_logoo" src="Images/Fertig_Final_3.png" alt="Einleitungsbild" width=100%/>
+        </div>
+        
+        <div id="id_preise" style="display:flex; justify-content: center">
+                <a href=https://www.alphavantage.co/ class="u_preis" id="price_1" style="text-decoration: none"  onmouseover='this.style.textDecoration="underline"'  onmouseout='this.style.textDecoration="none"'>EUR/USD: </a>
+                <a href=https://www.alphavantage.co/ class="u_preis" id="price_2" style="text-decoration: none"  onmouseover='this.style.textDecoration="underline"'  onmouseout='this.style.textDecoration="none"'>USD/JPY: </a>
+                <a href=https://www.alphavantage.co/ class="u_preis" id="price_3" style="text-decoration: none"  onmouseover='this.style.textDecoration="underline"'  onmouseout='this.style.textDecoration="none"'>GBP/USD: </a>
+                <a href=https://www.alphavantage.co/ class="u_preis" id="price_4" style="text-decoration: none"  onmouseover='this.style.textDecoration="underline"'  onmouseout='this.style.textDecoration="none"'>AUD/USD: </a>
+                <a href=https://www.alphavantage.co/ class="u_preis" id="price_5" style="text-decoration: none"  onmouseover='this.style.textDecoration="underline"'  onmouseout='this.style.textDecoration="none"'>USD/CHF: </a>
+                <a href=https://www.cryptonator.com/ class="u_preis" id="price_6" style="text-decoration: none"  onmouseover='this.style.textDecoration="underline"'  onmouseout='this.style.textDecoration="none"'>BTC/USD: </a>
+        </div>
+
+        <div id="id_img_bitcoin">
+                <a href="https://de.wikipedia.org/wiki/Bitcoin">
+                    <img class="c_bitcoin" src="Images/Bitcoin.jpg" alt="BItcoinbild" width=73.5%/>
+                </a>
+        </div>
+
+        <div id="id_info" >
+                <div id=id_infotext>
+                    <h1>FinanceBets</h1>
+                    <i style="font-size:medium; font-weight: 500"> FinanceBets (Financial Betting) bietet einen virtuellen Broker für Finanzwetten. Die APP bietet simulierten Kurspreise, welche sich den realen Kurspreisen mehrmals am Tag anpassen. Damit ermöglicht FinanceBets den "demo" Handel
+                    von Währungen und Kryptowährungen basierend auf interaktiven Preischarts. Gehandelt wird mit virtuellen Coins, wodurch sich die Spieler mit anderen Spielern in verschiedenen Rankings
+                    messen können.</i>
+                </div>
+        </div>
+
+        <div id="id_playstore">
+                <a href='https://play.google.com/store/apps/details?id=aaa.financebets.alpha_v1'>
+                    <img class="c_playstore" alt='Jetzt bei Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/de_badge_web_generic.png' width=80%/></a>
+        
+                <div style="padding-left:10px; padding-right:10px;">
+                    <i style="font-size:medium"><strong><i></i>Lade dir die APP jetzt im Google Playstore herunter!</i></strong></i>
+                </div>
+        </div>
+        <div id="id_footer">
+                <a href ="https://financebets.de" style="padding-left:5px; padding-right:5px">Home</a>
+                <a href ="https://financebets.de/Disclaimer.html" style="padding-left:5px; padding-right:5px">Disclaimer</a>
+                <a href ="https://financebets.de/Impressum.html" style="padding-left:5px; padding-right:5px">Impressum</a>
+                <a href ="https://financebets.de/Datenschutz.html" style="padding-left:5px; padding-right:5px"> Datenschutz</a>
+                <a href="https://www.alphavantage.co/" style="padding-left:5px; padding-right:5px">Alpha Vantage</a>
+                <a href="https://www.cryptonator.com/" style="padding-left:5px; padding-right:5px">Cryptonator</a>
+        </div>
+
+        <div id="zaehler" style="background-color: #d4d4d4; position:fixed; bottom:0; right:0; padding-bottom:8px; padding-right:10px;">
+            <script type="text/javascript" src="https://whomania.com/count/9et4"></script><br>
+       </div>
+    </div>
+
+
+    
+    <script>
+        function Get_Prices(url) {
+            fetch(url, { mode: 'no-cors'})
+                    .then(function (response) {
+                        return response.json();
+                    })
+                    .then(function (myJson) {
+                        //console.log(myJson.Price);
+                        document.getElementById("price_1").innerHTML = "EUR/USD: " + myJson.EURUSD;
+                        document.getElementById("price_2").innerHTML = "USD/JPY: " + myJson.USDJPY;
+                        document.getElementById("price_3").innerHTML = "GBP/USD: " + myJson.GBPUSD;
+                        document.getElementById("price_4").innerHTML = "AUD/USD: " + myJson.AUDUSD;
+                        document.getElementById("price_5").innerHTML = "USD/CHF: " + myJson.USDCHF;
+                        document.getElementById("price_6").innerHTML = "BTC/USD: " + myJson.BTCUSD;
+                    })
+                    .catch(function (error) {
+                        console.log("Error: " + error);
+                    });
+        }
+
+        var url = "get_price.php";
+        Get_Prices(url);
+        
+
+    </script>
+
+    
+    
+</html>
+

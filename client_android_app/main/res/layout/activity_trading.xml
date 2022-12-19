@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_trading"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:excludeFromRecents="true"
+    tools:context="aaa.financebets.alpha_v1.MainActivity">
+
+    <ImageView
+        android:id="@+id/layout_tr"
+        android:layout_width="307dp"
+        android:layout_height="128dp"
+
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/bit_trading" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="21dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="29dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:text="Short"
+            android:textSize="22dp" />
+
+        <Space
+            android:layout_width="69dp"
+            android:layout_height="match_parent" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:text="Long"
+            android:textSize="22dp"/>
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textVieww01"
+            android:layout_width="273dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="      EUR/USD:"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/textVieww02"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#AE1E88E5"
+            android:gravity="center|center_vertical"
+            android:text="1.1876"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView01"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="     Coins:     "
+            android:textSize="27dp" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="107dp"
+            android:layout_height="37dp"
+            android:background="#AE1E88E5"
+            android:entries="@array/einsatz_array"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="     Zeitspanne:"
+            android:textSize="27dp" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="107dp"
+            android:layout_height="37dp"
+            android:background="#AE1E88E5"
+            android:entries="@array/zeitspanne_array"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_End_1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="20dp"
+            app:backgroundTint="#AE1E88E5" />
+
+        <Button
+            android:id="@+id/button_End_2"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:text="Fertig"
+            android:textSize="20dp"
+            app:backgroundTint="#AE1E88E5" />
+    </LinearLayout>
+
+</LinearLayout>

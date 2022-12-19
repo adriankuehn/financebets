@@ -1,4 +1,4 @@
-# financebets
+# FinanceBets
 Full Stack Development of a virtual broker for crypto currencies in the form of an app  (FinanceBets) including server and website programming
 
 Key functionalities Server: 
@@ -12,3 +12,22 @@ Key functionalities Android App:
 * Start new bets, show pending bets
 * Real-time plotting of currency price charts with an update each second
 * Show user profile, histrory and ranking of the best players
+
+
+<h2> Screenshots:<h2/>
+
+![Screenshots_1](https://github.com/adriankuehn/financebets/blob/main/images/Screens_1.png)
+
+![Screenshots_2](https://github.com/adriankuehn/financebets/blob/main/images/Screens_2.png)
+
+<br />
+<br />
+<br />
+
+<h2> Technical Overview:<h2/>
+
+![Overview_1](https://github.com/adriankuehn/financebets/blob/main/images/Overview_1.jpg)
+
+![Overview_2](https://github.com/adriankuehn/financebets/blob/main/images/Overview_2.jpg)
+
+![Overview_2](https://github.com/adriankuehn/financebets/blob/main/images/Overview_3.jpg)

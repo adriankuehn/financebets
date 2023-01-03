@@ -1,5 +1,8 @@
 # FinanceBets
-Full Stack Development of a virtual broker for crypto currencies in the form of an app  (FinanceBets) including server and website programming: <a href="https://financebets.de">https://financebets.de</a><br /><br />
+Full Stack Development of a virtual broker for crypto currencies in the form of an app  (FinanceBets) including server and website programming: 
+<a href="https://play.google.com/store/apps/details?id=aaa.financebets.alpha_v1"> See in Play Store </a><br />
+<a href="https://financebets.de">https://financebets.de</a><br /><br />
+
 
 Key functionalities Server: 
 * Receive and store current prices of crypto currencies from external APIs

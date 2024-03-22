@@ -17,8 +17,9 @@ Key functionalities Android App:
 - Start new bets, show pending bets
 - Real-time plotting of currency price charts with an update each second
 - Show user profile, histrory and ranking of the best players
+<br />
 
-<h2> Note:<h2/>
+### Note:
 The app was available in Google PlayStore from 11.12.2022 to 21.03.2024. The app was removed from PlayStore by the author due to cost reasons. The website financebets.de (hosted on Strato Server) was available from 05.12.2022 to 31.03.2024 and was also taken offline.
 <br />
 <br />

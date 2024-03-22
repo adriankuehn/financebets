@@ -23,9 +23,12 @@ The app was available in Google PlayStore from 11.12.2022 to 21.03.2024. The app
 <br />
 <br />
 Screenshot PlayStore App View:
+
 ![PlayStore_View_1](https://github.com/adriankuehn/financebets/blob/main/images/Screens_10.03.2024_PlayStore_Listing.png)
+
 <br />
 Screenshot FinanceBets Website View:
+
 ![PlayStore_View_1](https://github.com/adriankuehn/financebets/blob/main/images/Screens_22.03.24_Financebets_Website.png)
 
 <br />
